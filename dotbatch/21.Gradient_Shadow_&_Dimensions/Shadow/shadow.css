@@ -1,0 +1,39 @@
+/*Text Shadow , default color is black*/
+
+h1{
+    /*text-shadow : *horizontal *vertical blur * color;*/
+    text-shadow: 3px 3px 3px grey;
+}S
+h2{
+    /*text-shadow : *horizontal *vertical blur * color;*/
+    text-shadow: 3px 3px 3px grey, 3px 3px 3px red;
+}
+
+/*Box Shadow*/
+.sha{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 15px grey;
+    color: black;
+}
+.sha1{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    /*multiple shadow is used using comma*/
+    box-shadow: 10px 10px 15px grey,10px 10px 15px brown;
+    color: black;
+    display: inline-block;
+    margin: 50px;
+}
+.sha2{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    /*by giving negative value we can use shadow in upper side*/
+    box-shadow: -10px -10px 15px grey,10px 10px 15px brown;
+    color: black;
+    display: inline-block;
+    margin: 50px;
+}

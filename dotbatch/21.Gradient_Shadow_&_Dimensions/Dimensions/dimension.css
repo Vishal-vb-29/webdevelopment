@@ -1,0 +1,21 @@
+.box{
+    /*max height mtlb maximumitni ho skti hai*/
+    max-height: 100px;
+    border: 1px solid black;
+    /*Scroll krk dekhega content box k ander*/
+    overflow: scroll;
+
+
+}
+.mydiv{
+    margin: 10px;
+    /*content ki height min height se km h to height jitni di utni rhegi aur content jyada h min height se to fir height bad jayegi*/
+    min-height: 50px;
+    border: 1px solid black;
+}
+/*Short hand property of overflow*/
+#divi{
+    height: 50px;
+    border: 1px solid black;
+    overflow: auto;
+}

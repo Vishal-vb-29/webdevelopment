@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            background-color: aqua;
+            /* Separate transform X and Y axis */
+            /* transform: translateX(10px);
+            transform: translateY(50px); */
+            /* both axis in one */
+            transform: translate(10px,10px);
+            /* if deg is positive than clockwise rotate and if deg is negative than anticlockwise rotate  */
+            transform: rotate(-45deg);
+            margin: 100px;
+            /* Scale - stretch krna skale(horizontal,vertical) */
+            /* transform: scaleX(2);
+            transform: scaleY(4); */
+            transform: scale(2,5); 
+            /* Skew - tilt hota*/
+            transform: skew(45deg);
+        }
+        /* matrix: sbhi property ek hi m kr skte h */
+    </style>
+</head>
+<body>
+    <div class="box">ABCD</div>
+    
+</body>
+</html>

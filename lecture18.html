@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size Unit</title>
+    <style>
+        .box1{
+            background-color: #1fa;
+            border: 1px solid red;
+            width:50%
+        }
+        .child{
+            background-color: #aaa;
+            border: 1px solid black;
+            width: 20%;
+        }
+        .container{
+            background-color: #0af;
+            height: 50vh;
+            width: 50vw;
+        }
+        .box2{
+            border:1px solid brown;
+            font-size: 20px;
+        }
+        .container1{
+            font-size: 10px;
+        }
+        .box3{
+            font-size: 10em;
+        }
+        .box4{
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Percentage % -->
+    <div class="box1">
+        <div class="child">CHILD</div>
+    </div>
+    <!-- Viewport width (vw) & Viewport height(vh) -->
+    <div class="container">
+        Hello, Vishal here.
+    </div>
+    <!-- 1 Pixel = 1/96 of inch , ppi v/s dpi , physical pixel vs logical pixel-->
+    <div class="box2">VISHAL BIRLA</div>
+    <!-- em -->
+    <div class="container1">
+        <div class="box3">HELLO ALL OF YOU</div>
+    </div>
+    <!-- REM WALI UNIT HTML K RELATIVE HOTI HAI -->
+    <div class="box4">REM </div>
+</body>
+</html>

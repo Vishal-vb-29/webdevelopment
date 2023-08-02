@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        img{
+            margin: 10px;
+        }
+        div{
+            border: 1px solid black;
+        }
+        .img2{ 
+            /*current window k relative  hogi*/
+            position: relative; /*gap maintained rhegi hategi nhi*/
+            top: 100px; /*niche khassak gy*./
+            left: 30px;  /*right side khask gy*/
+        }
+        .container{
+            /*krna pdegi absolute krne k liye */
+            position: relative;
+            height: 8000px;
+            background-color: lightgoldenrodyellow;
+        }
+        .img3{
+            /*relative to closest positioned ancister, gap maintain nhi rhti gap ht jati dusri aajayegi wha , overlap*/
+            position: absolute;
+            top: 100px;
+        }
+        .img4{
+            /*scroll krne pr bhi fix rhti*/
+            /*puri window m fixed rhegi, relative to window*/
+            position: fixed;
+        }
+        .img1{
+            /*ye parent k hisab se fixed rhti lekin dusra aajata h to wo parent k sath upr chle jata h, relative to parent*/
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://th.bing.com/th/id/OIP.M84GkgCTpXgmUZsy8zicqwHaLG?w=202&h=302&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Poster 1" width="300px" height="300px
+        "/>
+        <img class="img2" src="https://th.bing.com/th/id/OIP.M84GkgCTpXgmUZsy8zicqwHaLG?w=202&h=302&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Poster 1" width="300px" height="300px
+        "/>
+        <img class="img3" src="https://th.bing.com/th/id/OIP.M84GkgCTpXgmUZsy8zicqwHaLG?w=202&h=302&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Poster 1" width="300px" height="300px
+        "/>
+        <img class="img4" src="https://th.bing.com/th/id/OIP.M84GkgCTpXgmUZsy8zicqwHaLG?w=202&h=302&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Poster 1" width="300px" height="300px
+        "/>
+    </div>
+    <div class="box"></div>
+    
+    
+</body>
+</html>

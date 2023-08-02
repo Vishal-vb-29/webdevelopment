@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 2px solid green;
+             /* Horizontal direction m ho gye flex se */
+            display: flex; 
+            /* mian axis chng krne k liye */
+            /* row(1234..) , row-reverse(..4321), column,column-reverse. */
+            flex-direction: column;
+            /* child ki width intect rhti teen value hoti wrap(1,2,3,4) no wrap(by default no adjustment) wrap-reverse(4,3,2,1) */
+            flex-wrap: wrap;
+           /* flex flow shorthand h flex-direction aur flex-wrap ka*/
+           flex-flow: column wrap;
+           /* justify-content: flex-start;
+           justify-content: flex-end;
+           justify-content: space-between;
+           justify-content: space-around; */
+           justify-content: space-evenly;
+           
+           
+        }
+        .box{
+            border: 1px solid black;
+            width: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+    </div>
+</body>
+</html>

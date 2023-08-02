@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.content img{
+    width: 320px;
+    height: 350px;
+    border-radius: 10px;
+}
+.content p{
+    margin: 10px;
+}
